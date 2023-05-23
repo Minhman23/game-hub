@@ -2,13 +2,12 @@ import {
   Alert,
   AlertDescription,
   AlertIcon,
-  AlertTitle,
   Box,
   Heading,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
-import NavBar from "../components/NavBar";
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 const ErrorPage = () => {
   const error = useRouteError();
