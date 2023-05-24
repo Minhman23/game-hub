@@ -19,6 +19,7 @@ const GameScreenshot = ({ slug }: Props) => {
           overflow={"hidden"}
           key={file.id}
           src={file.image}
+          objectFit={"fill"}
         />
       ))}
     </SimpleGrid>
