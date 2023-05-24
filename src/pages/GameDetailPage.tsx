@@ -1,13 +1,8 @@
-import {
-  Box,
-  Heading,
-  Image,
-  Spinner,
-  Text
-} from "@chakra-ui/react";
+import { Box, Heading, Image, Spinner, Text } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import GameAttributes from "../components/GameAttributes";
 import useGame from "../hooks/useGame";
+import GameTrailer from "../components/GameTrailer";
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -22,6 +17,7 @@ const GameDetailPage = () => {
       <Heading>{game.name}</Heading>
       <Text>{game.description_raw}</Text>
       <GameAttributes game={game} />
+      <GameTrailer slug={game.slug} />
     </Box>
   );
 };
