@@ -28,8 +28,8 @@ const GameDetailPage = () => {
         <GameAttributes game={game} />
       </GridItem>
       <GridItem margin={2}>
-        <GameTrailer slug={game.slug} />
-        <GameScreenshot slug={game.slug} />
+        <GameTrailer slug={game.id} />
+        <GameScreenshot slug={game.id} />
       </GridItem>
     </SimpleGrid>
   );

@@ -1,7 +1,7 @@
 import useTrailers from "../hooks/useTrailers";
 
 interface Props {
-  slug: string;
+  slug: number;
 }
 const GameTrailer = ({ slug }: Props) => {
   const { data, isLoading, error } = useTrailers(slug);

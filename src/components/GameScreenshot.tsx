@@ -2,7 +2,7 @@ import { Image, SimpleGrid } from "@chakra-ui/react";
 import useScreenshots from "../hooks/useScreenshots";
 
 interface Props {
-  slug: string;
+  slug: number;
 }
 
 const GameScreenshot = ({ slug }: Props) => {
