@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import GameAttributes from "../components/GameAttributes";
 import useGame from "../hooks/useGame";
 import GameTrailer from "../components/GameTrailer";
+import GameScreenshot from "../components/GameScreenshot";
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -18,6 +19,7 @@ const GameDetailPage = () => {
       <Text>{game.description_raw}</Text>
       <GameAttributes game={game} />
       <GameTrailer slug={game.slug} />
+      <GameScreenshot slug={game.slug} />
     </Box>
   );
 };
